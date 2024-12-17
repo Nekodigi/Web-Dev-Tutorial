@@ -2,18 +2,15 @@
 
 import Link from "next/link";
 import { ModeToggle } from "../theme-toggle";
-import { cn } from "@/lib/utils";
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
 import { Fragment } from "react";
-import { SidebarTrigger } from "../ui/sidebar";
 
 export const Header = () => {
   const pathName = usePathname();

@@ -45,7 +45,7 @@ export function AppSidebar() {
           </Link>
         </SidebarMenuButton>
         {pages.map((group, index) => (
-          <SidebarGroup>
+          <SidebarGroup key={index}>
             <SidebarGroupLabel>{group.name}</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>

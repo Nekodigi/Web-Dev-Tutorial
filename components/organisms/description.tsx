@@ -3,14 +3,14 @@ import { Button } from "../ui/button";
 type DescriptionProps = {
   title: string;
   body: string;
-  ref?: string;
+  url?: string;
   withoutSample?: boolean;
 };
 
 export const Description = ({
   title,
   body,
-  ref,
+  url,
   withoutSample,
 }: DescriptionProps) => {
   return (
@@ -21,10 +21,10 @@ export const Description = ({
       <p className="leading-7 [&:not(:first-child)]:mt-6 whitespace-pre-line">
         {body}
       </p>
-      {ref && (
+      {url && (
         <div className="flex justify-end">
           <Button asChild>
-            <a href={ref} target="_blank">
+            <a href={url} target="_blank">
               参考情報
             </a>
           </Button>

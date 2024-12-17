@@ -8,10 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { CodeBlock } from "react-code-blocks";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 
 type CodeProps = {

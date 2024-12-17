@@ -76,7 +76,7 @@ export default function Page() {
           オブジェクトについても同様の注意が必要です。
           削除、更新は、filter,map等を用いた複雑な処理が必要なため、コードを確認して理解を深めてください。
         `}
-        ref="https://cat-form-2c7.notion.site/JavaScript-158c8df8f8f9805badcef9335d254e64?pvs=4"
+        url="https://cat-form-2c7.notion.site/JavaScript-158c8df8f8f9805badcef9335d254e64?pvs=4"
       />
       <div>
         <div>

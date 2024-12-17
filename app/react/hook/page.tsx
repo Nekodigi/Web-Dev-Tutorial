@@ -55,7 +55,7 @@ export default function Page() {
         useMemoは、他の変数をもとに導出できる値を定義するときに使う。
         useEffectは、変数更新タイミングで実行したい処理を記述するときに使う。何も記載しない場合は、ページを開いた時のみ実行される。
         `}
-        ref="https://reffect.co.jp/react/react-hook-usestate-understand"
+        url="https://reffect.co.jp/react/react-hook-usestate-understand"
       />
       <div>
         <p>

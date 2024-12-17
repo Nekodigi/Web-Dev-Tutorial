@@ -1,7 +1,6 @@
 "use client";
 
 import { Description } from "@/components/organisms/description";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
           以下のコマンドで開発サーバーを立ち上げてください。
           yarn run dev
         `}
-        ref="https://nextjs.org/docs/app/getting-started/installation"
+        url="https://nextjs.org/docs/app/getting-started/installation"
         withoutSample
       />
       <Description
@@ -36,7 +35,7 @@ export default function Home() {
           追記してほしい内容があれば、
           ndeji69@gmail.com又は、Discord : @Nekokazuまでご連絡ください！
         `}
-        ref="https://cat-form-2c7.notion.site/158c8df8f8f98012afdcfd2208e32334?pvs=4"
+        url="https://cat-form-2c7.notion.site/158c8df8f8f98012afdcfd2208e32334?pvs=4"
         withoutSample
       />
     </div>

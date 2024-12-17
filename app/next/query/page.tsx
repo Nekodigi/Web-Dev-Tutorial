@@ -45,7 +45,7 @@ export default function Page() {
           クエリは、URLの末尾に?key=valueのような形で記述することで、その値を取得することができます。
           試しに/next/query?age=100&name=山田というURLにアクセスしてみてください。
         `}
-        ref="https://reffect.co.jp/react/next-js"
+        url="https://reffect.co.jp/react/next-js"
       />
       <div>
         <p>名前は : {searchParams.get("name")}</p>
