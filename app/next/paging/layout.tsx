@@ -82,6 +82,7 @@ export default function Layout({
         body={`ヘッダーやフッターなど、共通の部分を使いまわすことができます。
           本サンプルは複数ページに分かれているため、コードのコメントをよく見てファイルを配置してください。
         `}
+        url="https://reffect.co.jp/react/next-js"
       />
       <p>ヘッダー</p>
       {children}
