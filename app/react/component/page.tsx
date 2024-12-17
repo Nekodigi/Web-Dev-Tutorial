@@ -115,8 +115,11 @@ export default function Page() {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="値を入力"
+            className="border"
           />
-          <button onClick={() => onAppend()}>リストに追加</button>
+          <button onClick={() => onAppend()} className="underline">
+            リストに追加
+          </button>
         </div>
         <ul>
           {list.map((item, index) => (
@@ -124,7 +127,7 @@ export default function Page() {
             <Component
               key={index}
               onClick={() => onDelete(item)}
-              index={index}
+              index={index + 1}
               value={item}
             />
           ))}

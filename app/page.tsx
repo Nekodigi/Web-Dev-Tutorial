@@ -12,6 +12,8 @@ export default function Home() {
           左のサイドバーから各機能の解説、動作デモ、サンプルコードを確認することができます。
           動作デモは全て触って動かせるようになっているので、実際に動かして動作を確認してみてください！
         `}
+        url="/react/hook"
+        urlDesc="試してみる！"
         withoutSample
       />
       <Description
@@ -25,6 +27,7 @@ export default function Home() {
           yarn run dev
         `}
         url="https://nextjs.org/docs/app/getting-started/installation"
+        urlDesc="公式インストールガイド"
         withoutSample
       />
       <Description
@@ -36,6 +39,7 @@ export default function Home() {
           ndeji69@gmail.com又は、Discord : @Nekokazuまでご連絡ください！
         `}
         url="https://cat-form-2c7.notion.site/158c8df8f8f98012afdcfd2208e32334?pvs=4"
+        urlDesc="チートシート"
         withoutSample
       />
     </div>

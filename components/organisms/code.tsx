@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { CodeBlock } from "react-code-blocks";
 import Link from "next/link";
+import { useState } from "react";
 
 type CodeProps = {
   text: string;
@@ -20,13 +21,14 @@ export const Code = ({ text }: CodeProps) => {
     language: "tsx",
     showLineNumbers: true,
   };
+  const [open, setOpen] = useState(false);
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button>コードを見る</Button>
       </DialogTrigger>
-      <DialogContent className="max-h-screen max-w-screen flex flex-col">
+      <DialogContent className="max-h-screen max-w-[800px] flex flex-col">
         <DialogHeader>
           <DialogTitle>コード</DialogTitle>
           <DialogDescription>
@@ -39,7 +41,9 @@ export const Code = ({ text }: CodeProps) => {
 
         <CodeBlock {...copyBlockProps} />
         <DialogFooter>
-          <Button type="submit">閉じる</Button>
+          <Button type="submit" onClick={() => setOpen(false)}>
+            閉じる
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

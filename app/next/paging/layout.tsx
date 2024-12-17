@@ -78,8 +78,8 @@ export default function Layout({
   return (
     <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
       <Description
-        title="レイアウト"
-        body={`ヘッダーやフッターなど、共通の部分を使いまわすことができます。
+        title="レイアウト - layout.tsx"
+        body={`ヘッダーやフッターなど、共通の部分を再利用することができます。
           本サンプルは複数ページに分かれているため、コードのコメントをよく見てファイルを配置してください。
         `}
         url="https://reffect.co.jp/react/next-js"

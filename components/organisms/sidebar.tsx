@@ -24,11 +24,32 @@ export function AppSidebar() {
       ],
     },
     {
-      name: "Next",
+      name: "Next.js",
       list: [
         {
           name: "クエリ - ?key=value&...",
           path: "/next/query?name=山田太郎&age=1000",
+        },
+        {
+          name: "レイアウト - layout.tsx",
+          path: "/next/paging",
+        },
+      ],
+    },
+    {
+      name: "Shadcn",
+      list: [
+        { name: "基本要素 - button/input", path: "/shadcn/basic" },
+        { name: "特殊要素 - dialog/select...", path: "/shadcn/special" },
+      ],
+    },
+    {
+      name: "API",
+      list: [
+        { name: "API基礎 - GET/POST...", path: "/apis/basic" },
+        {
+          name: "APIクエリ - slug/query",
+          path: "/apis/query",
         },
       ],
     },

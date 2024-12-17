@@ -50,10 +50,10 @@ export default function Page() {
     <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
       <Description
         title="状態管理 - useState"
-        body={`useState, useMemo, useEffectの3つのフックを使った、状態管理。
-        ほとんどの変数はuseStateを使って管理する。setで値を更新すると、表示内容が自動的に更新される。
-        useMemoは、他の変数をもとに導出できる値を定義するときに使う。
-        useEffectは、変数更新タイミングで実行したい処理を記述するときに使う。何も記載しない場合は、ページを開いた時のみ実行される。
+        body={`useState, useMemo, useEffectの3つのフックを使った、状態管理のサンプルプログラムです。
+        ほとんどの変数はuseStateを使って管理します。setで値を更新すると、表示内容が自動的に更新されます。
+        useMemoは、計算結果を保存するために用いられます。
+        useEffectは、変数更新タイミングで実行するときに使います。何も記載しない場合は、ページを開いた時のみ実行されます。
         `}
         url="https://reffect.co.jp/react/react-hook-usestate-understand"
       />
@@ -61,7 +61,7 @@ export default function Page() {
         <p>
           {count} は {evenOrOdd}
         </p>
-        <button onClick={() => setCount(count + 1)}>
+        <button onClick={() => setCount(count + 1)} className="underline">
           ここをクリックして値を増やす！
         </button>
       </div>

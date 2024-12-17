@@ -46,6 +46,9 @@ export const Header = () => {
         </Breadcrumb>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeznebyOR0TL1MthWluJNNBn9d7VnnXq7YbKB0w5t_NF8M_1Q/viewform?usp=dialog">
+            <p className="underline">ご意見</p>
+          </Link>
           <nav className="flex items-center space-x-1">
             <ModeToggle />
           </nav>

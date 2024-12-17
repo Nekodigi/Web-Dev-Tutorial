@@ -4,6 +4,7 @@ type DescriptionProps = {
   title: string;
   body: string;
   url?: string;
+  urlDesc?: string;
   withoutSample?: boolean;
 };
 
@@ -11,6 +12,7 @@ export const Description = ({
   title,
   body,
   url,
+  urlDesc,
   withoutSample,
 }: DescriptionProps) => {
   return (
@@ -23,9 +25,9 @@ export const Description = ({
       </p>
       {url && (
         <div className="flex justify-end">
-          <Button asChild>
+          <Button variant="outline" asChild>
             <a href={url} target="_blank">
-              参考情報
+              {urlDesc || "参考情報"}
             </a>
           </Button>
         </div>
