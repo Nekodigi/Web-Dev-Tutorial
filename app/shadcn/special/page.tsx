@@ -222,7 +222,7 @@ export default function Page() {
                 <Calendar
                   mode="single"
                   selected={date}
-                  onSelect={setDate as any}
+                  onSelect={(date) => date && setDate(date)} //date && とすることで、nullの場合はsetDateを実行しない
                   initialFocus
                 />
               </PopoverContent>
