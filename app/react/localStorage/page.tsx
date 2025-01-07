@@ -34,9 +34,12 @@ export default function Page() {
 `;
 
 export default function Page() {
-  const [text, setText] = useState(localStorage.getItem("text") || "");
+  const [text, setText] = useState(
+    typeof window !== "undefined" ? localStorage.getItem("text") || "" : ""
+  );
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     localStorage.setItem("text", text);
   }, [text]);
 

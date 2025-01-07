@@ -14,7 +14,7 @@ if (!getApps().length) {
   getFirestore().settings({ ignoreUndefinedProperties: true });
 }
 
-export const db = getFirestore();
+const db = getFirestore();
 
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;

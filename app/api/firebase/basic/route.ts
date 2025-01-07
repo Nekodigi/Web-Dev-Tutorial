@@ -14,7 +14,7 @@ if (!getApps().length) {
   getFirestore().settings({ ignoreUndefinedProperties: true });
 }
 
-export const db = getFirestore();
+const db = getFirestore();
 
 type userData = {
   name: string;
