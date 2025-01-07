@@ -1,5 +1,3 @@
-export const dynamic = "force-static";
-
 export async function GET() {
   const data = "GET request received!";
   return Response.json({ data });

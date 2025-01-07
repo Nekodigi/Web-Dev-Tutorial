@@ -9,8 +9,6 @@ const code = `
 //! 複数ファイルに分かれているため、コードをコピーする際は注意してください。
 
 // #start /api/basic/route.ts
-export const dynamic = "force-static";
-
 export async function GET() {
   const data = "GET request received!";
   return Response.json({ data });

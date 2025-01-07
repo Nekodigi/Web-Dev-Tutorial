@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Home } from "lucide-react";
 import Link from "next/link";
+import { list } from "postcss";
 
 export function AppSidebar() {
   const pages = [
@@ -21,6 +22,7 @@ export function AppSidebar() {
         { name: "状態管理 - useState", path: "/react/hook" },
         { name: "配列 - [...array]", path: "/react/array" },
         { name: "コンポーネント - </>", path: "/react/component" },
+        { name: "値の保存 - localStorage", path: "/react/localStorage" },
       ],
     },
     {
@@ -51,7 +53,22 @@ export function AppSidebar() {
           name: "APIクエリ - slug/query",
           path: "/apis/query",
         },
+        {
+          name: "環境変数 - .env",
+          path: "/apis/secret",
+        },
       ],
+    },
+    {
+      name: "Firestore",
+      list: [
+        { name: "CRUD操作 - create/read...", path: "/firebase/basic" },
+        { name: "検索 - where()", path: "/firebase/search" },
+      ],
+    },
+    {
+      name: "NextAuth",
+      list: [{ name: "ユーザー認証 - NextAuth", path: "/auth/routing" }],
     },
   ];
 

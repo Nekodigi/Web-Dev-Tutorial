@@ -24,8 +24,6 @@ const Component = ({ index, value, onClick }: ComponentProps) => {
 };
 
 export default function Page() {
-  //変数は基本的にすべてuseStateで管理する。
-  //set**で値を変更したときに、値が保存され表示内容も変わる
   const [list, setList] = useState<string[]>(["アイテム1", "アイテム2"]);
   const [text, setText] = useState("");
 
@@ -85,8 +83,6 @@ const Component = ({ index, value, onClick }: ComponentProps) => {
 };
 
 export default function Page() {
-  //変数は基本的にすべてuseStateで管理する。
-  //set**で値を変更したときに、値が保存され表示内容も変わる
   const [list, setList] = useState<string[]>(["アイテム1", "アイテム2"]);
   const [text, setText] = useState("");
 

@@ -9,8 +9,6 @@ const code = `"use client";
 import { useState } from "react";
 
 export default function Page() {
-  //変数は基本的にすべてuseStateで管理する。
-  //set**で値を変更したときに、値が保存され表示内容も変わる
   const [list, setList] = useState<string[]>(["アイテム1", "アイテム2"]);
   const [text, setText] = useState("");
 
@@ -20,9 +18,6 @@ export default function Page() {
   };
   const onDelete = (value: string) => {
     setList(list.filter((item) => item !== value));
-  };
-  const onUpdate = (value: string) => {
-    setList(list.map((item) => (item === value ? "更新" : item)));
   };
   return (
     <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
@@ -52,8 +47,6 @@ export default function Page() {
 `;
 
 export default function Page() {
-  //変数は基本的にすべてuseStateで管理する。
-  //set**で値を変更したときに、値が保存され表示内容も変わる
   const [list, setList] = useState<string[]>(["アイテム1", "アイテム2"]);
   const [text, setText] = useState("");
 
@@ -64,9 +57,6 @@ export default function Page() {
   const onDelete = (value: string) => {
     setList(list.filter((item) => item !== value));
   };
-  const onUpdate = (value: string) => {
-    setList(list.map((item) => (item === value ? "更新" : item)));
-  };
   return (
     <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
       <Description
@@ -76,7 +66,8 @@ export default function Page() {
           オブジェクトについても同様の注意が必要です。
           削除、更新は、filter,map等を用いた複雑な処理が必要なため、コードを確認して理解を深めてください。
         `}
-        url="https://cat-form-2c7.notion.site/JavaScript-158c8df8f8f9805badcef9335d254e64?pvs=4"
+        url="https://ja.react.dev/learn/updating-arrays-in-state"
+        urlDesc="公式ドキュメント"
       />
       <div>
         <div>

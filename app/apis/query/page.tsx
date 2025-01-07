@@ -78,10 +78,10 @@ export default function Page() {
         title="APIクエリ - slug/query"
         body={`クエリの章で開設したように、APIでもクエリを受け取ることができます。
           また、/api/query/[slug]のように、[slug]の部分に任意の値を入れて、動作を変えることもできます。
-          APIのページにアクセスして、URLによって表示結果が変わることを確認してみましょう。
+          APIのページにアクセスして、URLによって表示結果が変わることを確認してみましょう。試しに/api/query/example?query=newQueryとしてみてください。
         `}
-        url="https://www.postman.com/"
-        urlDesc="Postmanダウンロード"
+        // url="https://www.postman.com/"
+        // urlDesc="Postmanダウンロード"
       />
       {loaded && (
         <div>
