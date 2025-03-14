@@ -16,10 +16,10 @@ export default function Page() {
   return (
     <div>
       <p>トップページだよ</p>
-      <Link href="/next/paging/sub1" className="underline">
+      <Link href="/sub1" className="underline">
         <p>ページ1へ</p>
       </Link>
-      <Link href="/next/paging/sub2" className="underline">
+      <Link href="/sub2" className="underline">
         <p>ページ2へ</p>
       </Link>
     </div>
@@ -32,11 +32,15 @@ export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
-      <p>ヘッダー</p>
-      {children}
-      <p>フッター</p>
-    </div>
+    <html>
+      <body>
+        <div className="h-[640px] flex flex-col gap-8 items-center mt-16">
+          <p>ヘッダー</p>
+          {children}
+          <p>フッター</p>
+        </div>
+      </body>
+    </html>
   );
 }
 // #end
@@ -48,7 +52,7 @@ export default function Page() {
   return (
     <div>
       <p>ページ1だよ</p>
-      <Link href="/next/paging" className="underline">
+      <Link href="/" className="underline">
         <p>トップページへ</p>
       </Link>
     </div>
@@ -63,7 +67,7 @@ export default function Page() {
   return (
     <div>
       <p>ページ2だよ</p>
-      <Link href="/next/paging" className="underline">
+      <Link href="/" className="underline">
         <p>トップページへ</p>
       </Link>
     </div>
