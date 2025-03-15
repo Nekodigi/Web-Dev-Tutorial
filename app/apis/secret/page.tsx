@@ -58,7 +58,6 @@ export default function Page() {
           <p>サーバーからアクセスした場合: {JSON.stringify(serverSecret)}</p>
         </div>
       )}
-      <Code text={code} />
     </div>
   );
 }

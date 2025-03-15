@@ -120,7 +120,6 @@ export default function Page() {
         <p>サーバーからの応答</p>
         <p>{JSON.stringify(response)}</p>
       </div>
-      <Code text={code} />
     </div>
   );
 }

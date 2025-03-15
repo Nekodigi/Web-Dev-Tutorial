@@ -51,7 +51,6 @@ export default function Page() {
           <p>GET結果: {JSON.stringify(resGET)}</p>
         </div>
       )}
-      <Code text={code} />
     </div>
   );
 }

@@ -62,7 +62,6 @@ export default function Page() {
           <p>POST結果: {JSON.stringify(resPOST)}</p>
         </div>
       )}
-      <Code text={code} />
     </div>
   );
 }

@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 
 const code = `"use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Page() {
   const [text, setText] = useState(localStorage.getItem("text") || "");
@@ -27,7 +27,6 @@ export default function Page() {
           className="border"
         />
       </div>
-      <Code text={code} />
     </div>
   );
 }

@@ -26,7 +26,6 @@ export default function Page() {
       <Suspense fallback={<div>loading...</div>}>
         <ParamsDependent />
       </Suspense>
-      <Code text={code} />
     </div>
   );
 }`;

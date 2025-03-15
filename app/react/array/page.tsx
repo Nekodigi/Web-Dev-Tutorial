@@ -39,7 +39,6 @@ export default function Page() {
           ))}
         </ul>
       </div>
-      <Code text={code} />
     </div>
   );
 }

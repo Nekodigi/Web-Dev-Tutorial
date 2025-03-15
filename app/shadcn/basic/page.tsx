@@ -27,7 +27,6 @@ export default function Page() {
         />
         <Button onClick={() => setRender(text)}>値を確定</Button>
       </div>
-      <Code text={code} />
     </div>
   );
 }

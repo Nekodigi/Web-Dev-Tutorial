@@ -73,7 +73,6 @@ export default function Page() {
         <PageWAuth />
         <LoginBtn />
       </SessionProvider>
-      <Code text={code} />
     </div>
   );
 }
