@@ -95,6 +95,8 @@ export function AppSidebar() {
         { name: "背景除去 - SAM", path: "/mediaPipe/mp-sam" },
         { name: "ジェスチャー - Gesture", path: "/mediaPipe/mp-gesture" },
         { name: "特徴量ベクトル - Embedding", path: "/mediaPipe/mp-embed" },
+        { name: "文章分類 - Text Class", path: "/mediaPipe/mp-textClass" },
+        { name: "文章特徴量 - Text Embed", path: "/mediaPipe/mp-textEmbed" },
       ],
     },
   ];
