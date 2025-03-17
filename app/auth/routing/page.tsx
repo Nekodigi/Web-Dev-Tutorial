@@ -122,7 +122,7 @@ export default function Page() {
           ユーザーの認証を安全かつ簡単に実装するためのライブラリがNextauthです。
           メール認証をはじめ、GoogleやFacebookなどのSNS認証にも対応しています。
           以下のコマンドでインストールしてください。
-          yarn add next-auth
+          pnpm add next-auth
           また、認証に必要な環境変数を設定する必要があるため、参考資料を参照して取得してください。
         `}
         url="https://zenn.dev/aya1357/articles/bb291f8b4a31cb"

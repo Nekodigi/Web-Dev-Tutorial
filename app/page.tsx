@@ -24,7 +24,7 @@ export default function Home() {
           npx create-next-app@latest
           /app/page.tsxを、サンプルコードに差し替えてください。
           以下のコマンドで開発サーバーを立ち上げてください。
-          yarn run dev
+          pnpm dev
         `}
         url="https://nextjs.org/docs/app/getting-started/installation"
         urlDesc="公式インストールガイド"

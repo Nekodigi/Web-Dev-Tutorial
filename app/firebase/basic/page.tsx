@@ -163,7 +163,7 @@ export default function Page() {
         今回は、GoogleのFirestoreというNoSQLデータベースを使用します。参考資料を参考にして、サービスアカウントを取得してください。
         サービスアカウントに記載されている値を、プログラムのコメント欄と、環境変数の章を参考にしながら、安全に記載してください。
         また、以下のコマンドで必要ライブラリをインストールしてください。
-        yarn add firebase-admin
+        pnpm add firebase-admin
         データが作成されると、firestoreのコンソールに反映されるため、そちらも確認してみてください。
         `}
         url="https://go-tech.blog/nodejs/firebase-firestore-operation/"

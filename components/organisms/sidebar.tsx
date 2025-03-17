@@ -70,6 +70,33 @@ export function AppSidebar() {
       name: "NextAuth",
       list: [{ name: "ユーザー認証 - NextAuth", path: "/auth/routing" }],
     },
+    {
+      name: "Web APIs",
+      list: [
+        { name: "音声認識/合成 - Web Speech API", path: "/web-api/speech" },
+      ],
+    },
+    {
+      name: "AI API",
+      list: [
+        { name: "文章生成 - ChatGPT API", path: "/ai-api/chatgpt-text" },
+        {
+          name: "マルチモーダル - ChatGPT API",
+          path: "/ai-api/chatgpt-multimodal",
+        },
+        { name: "画像生成 - DALL-E API", path: "/ai-api/dalle" },
+      ],
+    },
+    {
+      name: "MediaPipe",
+      list: [
+        { name: "全身検出 - Holistic", path: "/mediaPipe/mp-holistic" },
+        { name: "物体検出 - Object Detection", path: "/mediaPipe/mp-object" },
+        { name: "背景除去 - SAM", path: "/mediaPipe/mp-sam" },
+        { name: "ジェスチャー - Gesture", path: "/mediaPipe/mp-gesture" },
+        { name: "特徴量ベクトル - Embedding", path: "/mediaPipe/mp-embed" },
+      ],
+    },
   ];
 
   return (

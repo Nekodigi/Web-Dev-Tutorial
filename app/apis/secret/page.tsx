@@ -8,7 +8,7 @@ import { use, useEffect, useMemo, useRef, useState } from "react";
 const code = `
 //! 複数ファイルに分かれているため、コードをコピーする際は注意してください。
 
-// #start /app/.env.local
+// #start /.env.local
 SERVER_ENV="server secret"
 NEXT_PUBLIC_CLIENT_ENV="client secret"
 // #end

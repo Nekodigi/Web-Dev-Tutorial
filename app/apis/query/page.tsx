@@ -79,8 +79,6 @@ export default function Page() {
           また、/api/query/[slug]のように、[slug]の部分に任意の値を入れて、動作を変えることもできます。
           APIのページにアクセスして、URLによって表示結果が変わることを確認してみましょう。試しに/api/query/example?query=newQueryとしてみてください。
         `}
-        // url="https://www.postman.com/"
-        // urlDesc="Postmanダウンロード"
       />
       {loaded && (
         <div>
