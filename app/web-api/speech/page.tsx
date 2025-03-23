@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 
 const code = `"use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "regenerator-runtime/runtime";
 import SpeechRecognition, {
