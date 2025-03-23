@@ -1,4 +1,6 @@
-"use client";
+export const maxDuration = 60;
+
+("use client");
 
 import { Code } from "@/components/organisms/code";
 import { Description } from "@/components/organisms/description";
